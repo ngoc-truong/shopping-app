@@ -1,0 +1,91 @@
+:root {
+	--font-color: rgb(100, 100, 100);
+	--font-light: rgb(148, 148, 148);
+	--font-highlight: rgb(92, 144, 156);
+	--product-color-1: rgba(100, 57, 57, 0.732);
+	--product-color-2: black;
+}
+
+body {
+	font-family: 'Karla', sans-serif;
+	color: var(--font-color);
+}
+
+#container {
+	padding: 1em 10em;
+}
+
+.logo {
+	font-family: 'Playfair Display', serif;
+	font-size: 1.4em;
+	font-weight: 900;
+}
+
+.logo a, .navigation ul li a   {
+	text-decoration: none; 
+	color: var(--font-color);
+}
+
+.navigation ul li a:hover {
+	color: var(--font-light);
+}
+
+/* Navigation */
+nav {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.logo {
+	margin: 0.5em 0em 0em 0.4em;
+}
+
+.navigation {
+	text-align: right;
+	padding-right: 0.7em;
+}
+
+ul {
+	list-style-type: none; 
+}
+
+li {
+	text-decoration: none;
+	letter-spacing: .04em;
+	display: inline;
+	padding: 0.8em;
+	text-transform: uppercase;
+}
+
+
+/* Products and Product Cards */
+.cards-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+	margin: 0.6em;
+	margin-bottom: 1.2em;
+}
+
+.card img {
+	max-width: 100%;
+}
+
+.card h5 {
+	letter-spacing: 2px;
+	margin: 1em 0 0.5em 0;
+}
+
+.card p {
+	margin: 0;
+	margin-bottom: 0.2em;
+	text-transform: uppercase;
+	font-size: 0.8em;
+}
+
+.card p span {
+	color: var(--font-highlight);
+}
+

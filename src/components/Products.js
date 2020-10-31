@@ -1,21 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { products } from "../data/data";
+import ProductCard from "./ProductCard";
 
 const Products = () => {
+	const [coats, setCoats] = useState([]);
+
+	useEffect(() => {
+		setCoats(products);
+	}, []);
+
 	return (
-		<>
-			<div className="product-card">
-				{products.map((product) => {
-					return (
-						<div key={product.id}>
-							<img src={product.images[0]} alt={product.name} />
-							<h1>{product.name}</h1>
-							<p>{product.price}€</p>
-						</div>
-					)
-				})}
-			</div>
-		</>
+		<div className="cards-container">
+			{coats.map((coat) => {
+				return <ProductCard key={coat.id} product={coat} />
+			})}
+		</div>
 	)
 }
 
