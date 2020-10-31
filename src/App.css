@@ -4,6 +4,7 @@
 	--font-highlight: rgb(92, 144, 156);
 	--product-color-1: rgba(100, 57, 57, 0.732);
 	--product-color-2: black;
+	--button-background: #444;
 }
 
 body {
@@ -45,11 +46,11 @@ nav {
 	padding-right: 0.7em;
 }
 
-ul {
+.navigation ul {
 	list-style-type: none; 
 }
 
-li {
+.navigation ul li {
 	text-decoration: none;
 	letter-spacing: .04em;
 	display: inline;
@@ -85,7 +86,190 @@ li {
 	font-size: 0.8em;
 }
 
+.link {
+	text-decoration: none;
+	color: var(--font-color)
+}
+
 .card p span {
 	color: var(--font-highlight);
 }
 
+/* Product detail page */
+.product {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.images-container img {
+	max-width: 90%;
+	padding-left: 0.7em;
+	margin-bottom: 0.7em;
+	margin-top: 1.5em;
+}
+
+.product-details h5 span {
+	display: inline-block;
+	border-bottom: 2px solid var(--font-light);
+	padding-bottom: 2px;
+}
+
+button {
+	background-color: var(--button-background);
+	border: 1px solid var(--button-background);
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-size: 0.8em;
+	padding: 0.5em 4em;
+	margin-right: 1.5em;
+}
+
+button:hover {
+	filter: brightness(150%);
+}
+
+/* Homepage */
+.home-container {
+	padding: 0.6em;
+}
+
+.home-container img {
+	max-width: 100%;
+}
+
+.text {
+	font-size: 1.2em;
+}
+.first-row {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-bottom: 4em;
+}
+
+.first-row img {
+	justify-self: end;
+}
+
+.first-text {
+	margin-top: 12em;
+}
+
+.second-row {
+	position: relative;
+	margin-bottom: 5em;
+}
+
+.second-text {
+	float: left;
+	position: absolute;
+	left: 37.5%;
+	top: 40%;
+	z-index: 1000;
+	color: white;
+	font-size: 1.2em;
+	margin-bottom: 1em;
+}
+
+.second-text button{
+	background-color: white;
+	color: var(--font-color);
+	border: 1px solid white;
+	font-weight: 400;
+}
+
+.second-text button:hover {
+	opacity: 0.6;
+	color: black;
+}
+
+.third-row {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.third-row img {
+	max-width: 90%;
+	justify-self: end;
+}
+
+
+/* Discover */
+.discover {
+	margin-top: 5em; 
+}
+
+.discover hr {
+	border: none;
+	height: 1px;
+	color: var(--font-light);
+	background-color: var(--font-light);
+}
+
+.divider-title {
+	text-align: center;
+	margin-top: 3em;
+	font-size: 1.1em;
+}
+
+.discover-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	margin-top: 3em;
+}
+
+.discover-container img {
+	max-width: 100%;
+}
+
+.discover-card {
+	margin: 1em;
+	margin-bottom: 3em;
+	justify-self: center;
+}
+
+.discover-card a {
+	text-decoration: underline;
+	color: var(--font-color);
+	margin-right: 1em;
+}
+
+.discover-card a:hover {
+	filter: brightness(150%);
+}
+
+/* Footer */
+footer {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 2fr 1fr;
+	margin-top: 2em;
+}
+
+footer ul {
+	list-style-type: none;
+	padding: 0;
+	margin-left: 0.4em;
+}
+
+footer ul li a {
+	text-decoration: none;
+	letter-spacing: .04em;
+	padding: 0.8em;
+	color: var(--font-color);
+	font-size: 0.8em;
+}
+
+footer ul li a:hover {
+	filter: brightness(150%);
+}
+
+footer p {
+	justify-self: end;
+	text-align: right;
+}
+
+footer button {
+	width: 15em;
+	height: 5em;
+	justify-self: end;
+}

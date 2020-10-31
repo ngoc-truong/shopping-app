@@ -5,6 +5,8 @@ import Home from "./components/Home";
 import Products from "./components/Products";
 import Product from "./components/Product";
 import Cart from "./components/Cart";
+import Discover from "./components/Discover";
+import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
 					<Route exact path="/cart" component={Cart} />
 					<Route exact path="/products/:id" component={Product}/>
 				</Switch>
+				<Discover />
+				<Footer />
 			</div>
 		</BrowserRouter>
 	);
