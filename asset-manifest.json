@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/shopping-app/static/css/main.f2bea6f6.chunk.css",
+    "main.js": "/shopping-app/static/js/main.178563e9.chunk.js",
+    "main.js.map": "/shopping-app/static/js/main.178563e9.chunk.js.map",
+    "runtime-main.js": "/shopping-app/static/js/runtime-main.32a83cbd.js",
+    "runtime-main.js.map": "/shopping-app/static/js/runtime-main.32a83cbd.js.map",
+    "static/js/2.4fdb60ea.chunk.js": "/shopping-app/static/js/2.4fdb60ea.chunk.js",
+    "static/js/2.4fdb60ea.chunk.js.map": "/shopping-app/static/js/2.4fdb60ea.chunk.js.map",
+    "index.html": "/shopping-app/index.html",
+    "static/css/main.f2bea6f6.chunk.css.map": "/shopping-app/static/css/main.f2bea6f6.chunk.css.map",
+    "static/js/2.4fdb60ea.chunk.js.LICENSE.txt": "/shopping-app/static/js/2.4fdb60ea.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.32a83cbd.js",
+    "static/js/2.4fdb60ea.chunk.js",
+    "static/css/main.f2bea6f6.chunk.css",
+    "static/js/main.178563e9.chunk.js"
+  ]
+}
