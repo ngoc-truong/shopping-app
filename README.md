@@ -14,4 +14,6 @@ Best viewed with Firefox.
 - In the cart's page, the user should increment/decrement the number of items
 
 # Screenshot
+My goal was it to replicate the design and feeling of cosstores.com
+
 ![ALT screenshot](https://github.com/ngoc-truong/shopping-app/blob/master/src/images/screenshot-products-page.jpg)
