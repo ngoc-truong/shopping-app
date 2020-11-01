@@ -14,3 +14,4 @@ Best viewed with Firefox.
 - In the cart's page, the user should increment/decrement the number of items
 
 # Screenshot
+![ALT screenshot](https://github.com/ngoc-truong/shopping-app/blob/master/src/images/screenshot-products-page.jpg)
