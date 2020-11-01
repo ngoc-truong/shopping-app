@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingBag } from "@fortawesome/free-solid-svg-icons";
 
-const Nav = () => {
+const Nav = ({ addedItems }) => {
 	return (
 		<nav>
 			<div className="logo">
@@ -13,8 +13,12 @@ const Nav = () => {
 				<ul>
 					<li><Link to="/">Home</Link></li>
 					<li><Link to="/products">Products</Link></li>
-					<li><Link to="/cart">Cart</Link></li>
+					<li className="last-nav-item"><Link to="/cart">Cart</Link></li>
 					<FontAwesomeIcon icon={faShoppingBag} />
+					{ Number(addedItems.length) === 0
+						? ""
+						: ` (${addedItems.length})`
+					}
 				</ul>
 			</div>
 		</nav>
